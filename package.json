@@ -6,6 +6,10 @@
     "node": "6.9.4",
     "npm": "3.10.10"
   },
+  "cacheDirectories": [
+    "node_modules",
+    "client/node_modules"
+  ],
   "scripts": {
     "clean:install": "rm app/assets/webpack/*",
     "postinstall": "cd client && npm install",
