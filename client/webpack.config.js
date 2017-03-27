@@ -5,7 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = {
   entry: {
-    'terra-ui': './app/bundles/Home/startup/registration',
+    'terra-ui': path.resolve('./app/bundles/Home/startup/registration'),
   },
 
   output: {
