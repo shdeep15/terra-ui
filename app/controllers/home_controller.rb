@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @home_index_props = { name: "World in Controller" }
+    @home_index_props = { name: "Terra UI" }
   end
 end
