@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.3.3' # https://devcenter.heroku.com/articles/ruby-versions#selecting-a-version-of-ruby
+
 gem 'rails', '~> 5.0.2'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
