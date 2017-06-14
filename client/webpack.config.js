@@ -49,7 +49,8 @@ const config = {
     filename: '[name]-[hash].js',
 
     // Leading slash is necessary
-    publicPath: `/${webpackPublicOutputDir}`,
+    publicPath: 'http://localhost:8081/static/',
+    // publicPath: `/${webpackPublicOutputDir}`,
     path: webpackOutputPath,
   },
 
