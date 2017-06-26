@@ -5,6 +5,7 @@ import Base from 'terra-base';
 import Grid from 'terra-grid';
 import CorePackages from './CorePackages';
 import ClinicalPackages from './ClinicalPackages';
+import ConfigModal from './ConfigModal';
 
 const propTypes = {
   children: PropTypes.node,
@@ -29,6 +30,7 @@ class App extends React.Component {
     return (
       <Base locale={this.state.locale}>
         <Grid>
+          <ConfigModal />
           <Grid.Row>
             <Grid.Column small={2}>
               <CorePackages />
