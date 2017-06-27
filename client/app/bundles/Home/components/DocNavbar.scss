@@ -1,0 +1,21 @@
+body {margin:0;}
+
+.topnav {
+  display: flex;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #0065a3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover, .topnav a:focus {
+  background-color: lightgray;
+  outline: none;
+}

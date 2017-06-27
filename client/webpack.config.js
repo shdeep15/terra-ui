@@ -18,7 +18,8 @@ const config = {
   context: resolve(__dirname),
   entry: {
     'commons-bundle': ['babel-polyfill'],
-    'app-bundle': ['./app/bundles/App/startup/registration'],
+    'components-bundle': ['./app/bundles/App/startup/registration'],
+    'home-bundle': ['./app/bundles/Home/startup/registration'],
   },
 
   output: {

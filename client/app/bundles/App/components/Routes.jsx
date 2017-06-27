@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import { Router, Route, browserHistory, IndexRoute, Redirect } from 'react-router';
 import './site.scss';
 
 // Core Examples
@@ -48,7 +48,9 @@ class DocSiteLayoutRoutes extends React.Component {
   render() {
     return (
       <Router history={browserHistory}>
-        <Route path="/" component={DocSiteLayout}>
+        <Route path="/components" component={DocSiteLayout}>
+        <Redirect from="/components/core" to="/components" />
+        <Redirect from="/components/clinical" to="/components" />
           <IndexRoute />
           <Route path="/components/core/arrange" component={ArrangeExamples} />
           <Route path="/components/core/badge" component={BadgeExamples} />

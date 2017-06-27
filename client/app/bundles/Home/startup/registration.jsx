@@ -1,7 +1,7 @@
 import ReactOnRails from 'react-on-rails';
 
-import Components from '../components/Routes';
+import Home from '../containers/Home';
 
 ReactOnRails.register({
-  Components,
+  Home,
 });
