@@ -16,7 +16,7 @@
     "start": "webpack-dev-server --progress",
     "compile": "npm run compile:clean && npm run compile:build",
     "compile:clean": "rimraf lib",
-    "compile:build": "babel src --out-dir lib --copy-files",
+    "compile:build": "babel src --out-dir lib --copy-files && npm run fetch-config",
     "compile:heroku": "webpack --config webpack.prod.config --progress",
     "compile:prod": "webpack --config webpack.prod.config -p",
     "deploy": "npm run compile:prod && gh-pages -d build",
