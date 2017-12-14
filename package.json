@@ -37,6 +37,8 @@
     "terra-button": "^1.12.0",
     "terra-collapsible-menu-view": "^1.1.1",
     "terra-content-container": "^1.11.1",
+    "terra-grid": "^3.17.0",
+    "terra-heading": "^1.15.0",
     "terra-i18n": "^1.10.1",
     "terra-i18n-plugin": "^1.7.0",
     "terra-icon": "^1.12.1",
@@ -49,6 +51,7 @@
     "terra-navigation-layout": "^1.0.0",
     "terra-props-table": "^1.10.1",
     "terra-slide-panel": "^1.11.1",
+    "terra-text": "^1.14.0",
     "terra-theme-provider": "^1.6.1",
     "terra-toggle-button": "^1.15.0",
     "terra-form": "^1.14.0"

@@ -6,6 +6,10 @@ import Particles from 'react-particles-js';
 import HomeParticleConfig from './HomeParticleConfig';
 import ReadMe from '../../../README.md';
 import imgTerra from '../../assets/terra.png';
+import HomeAbout from './HomeAbout';
+import HomeModular from './HomeModular';
+import HomeTech from './HomeTech';
+import HomeFooter from './HomeFooter';
 import styles from './Home.scss';
 
 const cx = classNames.bind(styles);
@@ -18,8 +22,11 @@ const Home = () => (
       <Particles style={particleStyle} params={HomeParticleConfig} />
     </div>
     <div className={cx(['content'])}>
-      <Markdown src={ReadMe} />
-    </div>  
+      <HomeAbout />
+      <HomeTech />
+      <HomeModular />
+      <HomeFooter />
+    </div>
   </div>
 );
 
