@@ -7,6 +7,7 @@ import HomeParticleConfig from './HomeParticleConfig';
 import ReadMe from '../../../README.md';
 import imgTerra from '../../assets/terra.png';
 import HomeAbout from './HomeAbout';
+import HomeMoreInfo from './HomeMoreInfo';
 import HomeModular from './HomeModular';
 import HomeTech from './HomeTech';
 import HomeFooter from './HomeFooter';
@@ -26,6 +27,7 @@ const Home = () => (
     </div>
     <div className={cx(['content'])}>
       <HomeAbout />
+      <HomeMoreInfo />
       <HomeModular />
       <HomeTech />
       <HomeFooter />
