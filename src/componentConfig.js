@@ -23,50 +23,50 @@ const siteConfigPropType = PropTypes.objectOf(PropTypes.shape({
 }));
 
 const componentConfig = {
-  layout: {
-    name: 'Layout',
-    // example: {
-    //   path: '/components/layout',
-    //   component: LayoutExample,
-    //   description: 'Layout',
-    // },
-    // testRoot: '/tests/layout',
-    // tests: [{
-    //   path: '/default',
-    //   component: LayoutDefault,
-    //   description: 'Default',
-    // }, {
-    //   path: '/no-menu',
-    //   component: LayoutNoMenu,
-    //   description: 'No Menu',
-    // }, {
-    //   path: '/long-text',
-    //   component: LayoutLongText,
-    //   description: 'Long Text',
-    // }, {
-    //   path: '/no-header',
-    //   component: LayoutNoHeader,
-    //   description: 'No Header',
-    // }],
-  },
-  navigationLayout: {
-    name: 'Navigation Layout',
-    // example: {
-    //   path: '/components/navigation-layout',
-    //   component: NavigationLayoutExample,
-    //   description: 'Navigation Layout',
-    // },
-    // testRoot: '/tests/navigation-layout',
-    // tests: [{
-    //   path: '/basic',
-    //   component: NavigationLayoutBasic,
-    //   description: 'Basic',
-    // }, {
-    //   path: '/complex',
-    //   component: NavigationLayoutComplex,
-    //   description: 'Complex',
-    // }],
-  },
+  // layout: {
+  //   name: 'Layout',
+  //   // example: {
+  //   //   path: '/components/layout',
+  //   //   component: LayoutExample,
+  //   //   description: 'Layout',
+  //   // },
+  //   // testRoot: '/tests/layout',
+  //   // tests: [{
+  //   //   path: '/default',
+  //   //   component: LayoutDefault,
+  //   //   description: 'Default',
+  //   // }, {
+  //   //   path: '/no-menu',
+  //   //   component: LayoutNoMenu,
+  //   //   description: 'No Menu',
+  //   // }, {
+  //   //   path: '/long-text',
+  //   //   component: LayoutLongText,
+  //   //   description: 'Long Text',
+  //   // }, {
+  //   //   path: '/no-header',
+  //   //   component: LayoutNoHeader,
+  //   //   description: 'No Header',
+  //   // }],
+  // },
+  // navigationLayout: {
+  //   name: 'Navigation Layout',
+  //   // example: {
+  //   //   path: '/components/navigation-layout',
+  //   //   component: NavigationLayoutExample,
+  //   //   description: 'Navigation Layout',
+  //   // },
+  //   // testRoot: '/tests/navigation-layout',
+  //   // tests: [{
+  //   //   path: '/basic',
+  //   //   component: NavigationLayoutBasic,
+  //   //   description: 'Basic',
+  //   // }, {
+  //   //   path: '/complex',
+  //   //   component: NavigationLayoutComplex,
+  //   //   description: 'Complex',
+  //   // }],
+  // },
 };
 
 export default componentConfig;
