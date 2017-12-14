@@ -62,7 +62,7 @@ class App extends React.Component {
 
     return (
       <Router>
-        <ThemeProvider id="framework-site" themeName={themes[this.state.theme]} isGlobalTheme>
+        <ThemeProvider id="ui-site" themeName={themes[this.state.theme]} isGlobalTheme>
           <Base className="base" locale={this.state.locale}>
             <NavigationLayout
               header={applicationHeader}
