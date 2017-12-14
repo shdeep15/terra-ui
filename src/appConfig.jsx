@@ -1,5 +1,7 @@
 import React from 'react';
 import Home from './app/home/Home';
+import GettingStarted from './app/getting-started/GettingStarted';
+import GettingStartedMenu from './app/getting-started/GettingStartedMenu';
 import ApplicationMenu from './app/ApplicationMenu';
 import Tests from './app/tests/Tests';
 import TestsMenu from './app/tests/TestsMenu';
@@ -49,6 +51,9 @@ const navigation = {
     path: '/home',
     text: 'Home',
   }, {
+    path: '/getting-started',
+    text: 'Getting Started',
+  }, {
     path: '/components',
     text: 'Components',
   }, {
@@ -64,6 +69,14 @@ const routes = Object.freeze({
       component: {
         default: {
           componentClass: Home,
+        },
+      },
+    },
+    '/getting-started': {
+      path: '/getting-started',
+      component: {
+        default: {
+          componentClass: GettingStarted,
         },
       },
     },
@@ -100,6 +113,14 @@ const routes = Object.freeze({
           props: {
             navigation,
           },
+        },
+      },
+    },
+    '/getting-started': {
+      path: '/getting-started',
+      component: {
+        default: {
+          componentClass: injectConfig(componentConfig)(GettingStartedMenu),
         },
       },
     },
