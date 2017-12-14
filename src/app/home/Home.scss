@@ -1,0 +1,29 @@
+:local {
+  .home {
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar; // Ensures scrollbars do not affect width in IE10
+    overflow: auto;
+    border-top: 5px solid #fff;
+    position: absolute;
+    width: 100%;
+  }
+
+  .particles {
+    height: 400px;
+    padding: 0 5px 5px 5px;
+    position: relative;
+    width: 100%;
+
+    > *:first-child {
+      height: 100%;
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  .content {
+    padding: 15px;
+    width: 100%;
+  }
+}

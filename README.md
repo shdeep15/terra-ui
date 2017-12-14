@@ -1,13 +1,3 @@
-<!-- Logo -->
-<p align="center">
-  <img height="128" width="128" src="https://github.com/cerner/terra-core/raw/master/terra.png">
-</p>
-
-<!-- Name -->
-<h1 align="center">
-  Terra Framework
-</h1>
-
 [![Build Status](https://travis-ci.org/cerner/terra-framework.svg?branch=master)](https://travis-ci.org/cerner/terra-framework)
 
 - [Supported Browsers](#supported-browsers)

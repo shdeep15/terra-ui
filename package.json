@@ -30,6 +30,7 @@
     "postcss": "^6.0.9",
     "prop-types": "^15.5.8",
     "react-intl": "^2.3.0",
+    "react-particles-js": "^2.1.0",
     "react-router-dom": "^4.0.0",
     "terra-app-delegate": "^1.7.1",
     "terra-base": "^2.6.1",
