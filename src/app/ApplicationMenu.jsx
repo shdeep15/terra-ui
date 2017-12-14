@@ -12,7 +12,7 @@ const propTypes = {
 
 const ApplicationMenu = ({ navigation, routingStackDelegate }) => (
   <MenuList
-    headerText="Terra Framework"
+    headerText="Terra UI"
     routingStackDelegate={routingStackDelegate}
     links={navigation.links.map(item => ({
       id: item.path,
