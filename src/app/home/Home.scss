@@ -12,8 +12,10 @@
   .title-container {
     left: 50%;
     position: absolute;
+    text-align: center;
     top: 85%;
     transform: translate3d(-50%, -50%, 0);
+    width: 100%;
   }
 
   .title {
