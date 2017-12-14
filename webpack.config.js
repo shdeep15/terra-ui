@@ -84,6 +84,7 @@ module.exports = {
       'react-intl': path.resolve(__dirname, 'node_modules', 'react-intl'),
       moment: path.resolve(__dirname, 'node_modules', 'moment'),
       'react-dom': path.resolve(__dirname, 'node_modules', 'react-dom'),
+      xfc: path.resolve(__dirname, 'node_modules', 'xfc'),
     },
   },
   output: {

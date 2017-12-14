@@ -21,30 +21,6 @@ const injectConfig = config => (
   )
 );
 
-const buildConfigForComponent = (config, ComponentClass) => {
-  const generatedConfig = {};
-  Object.keys(componentConfig).map((componentKey) => {
-    const testRoot = componentConfig[componentKey].testRoot;
-    if (testRoot) {
-      return {
-        path: testRoot,
-        component: {
-          default: {
-            componentClass: injectConfig(componentConfig[componentKey])(ComponentClass),
-          },
-        },
-      };
-    }
-    return undefined;
-  })
-  .filter(test => !!test)
-  .forEach((test) => {
-    generatedConfig[test.path] = test;
-  });
-
-  return generatedConfig;
-};
-
 const navigation = {
   index: '/home',
   links: [{
@@ -56,9 +32,6 @@ const navigation = {
   }, {
     path: '/components',
     text: 'Components',
-  }, {
-    path: '/tests',
-    text: 'Tests',
   }],
 };
 
@@ -88,15 +61,6 @@ const routes = Object.freeze({
         },
       },
     },
-    '/tests': {
-      path: '/tests',
-      component: {
-        default: {
-          componentClass: Tests,
-        },
-      },
-    },
-    ...buildConfigForComponent(componentConfig, ComponentTests),
   },
   menu: {
     '/': {
@@ -132,15 +96,6 @@ const routes = Object.freeze({
         },
       },
     },
-    '/tests': {
-      path: '/tests',
-      component: {
-        default: {
-          componentClass: injectConfig(componentConfig)(TestsMenu),
-        },
-      },
-    },
-    ...buildConfigForComponent(componentConfig, ComponentTestsMenu),
   },
 });
 

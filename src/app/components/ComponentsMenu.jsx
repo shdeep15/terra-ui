@@ -2,28 +2,28 @@ import React from 'react';
 import RoutingStackDelegate from 'terra-navigation-layout/lib/RoutingStackDelegate';
 
 import MenuList from '../common/menu/MenuList';
-import { siteConfigPropType } from '../../componentConfig';
 
 const propTypes = {
   routingStackDelegate: RoutingStackDelegate.propType,
-  config: siteConfigPropType,
 };
 
 const ComponentsMenu = ({ routingStackDelegate, config }) => (
   <MenuList
     headerText="Components"
     routingStackDelegate={routingStackDelegate}
-    links={Object.keys(config).map((componentKey) => {
-      const example = config[componentKey].example;
-      if (example) {
-        return {
-          id: example.path,
-          path: example.path,
-          text: example.description,
-        };
-      }
-      return undefined;
-    })}
+    links={[].concat(...config.map((packageConfig) => {
+      const links = config.map((packageConfig) => {
+        return packageConfig.components.map((exampleConfig) => {
+          return {
+            id: exampleConfig.path,
+            path: exampleConfig.path,
+            text: exampleConfig.name,
+          };
+        });
+      });
+
+      return [].concat(...links);
+    }))}
   />
 );
 
