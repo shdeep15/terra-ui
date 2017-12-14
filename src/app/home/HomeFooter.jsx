@@ -4,7 +4,7 @@ import Grid from 'terra-grid';
 import Text from 'terra-text';
 import List from 'terra-list';
 /* eslint-enable import/no-extraneous-dependencies */
-import cernerLogo from './cerner_logo.png';
+import cernerLogo from '../../assets/cerner_logo.png';
 import styles from './HomeFooter.scss';
 
 const AppFooter = () => (

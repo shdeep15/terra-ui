@@ -23,8 +23,8 @@ const Home = () => (
     </div>
     <div className={cx(['content'])}>
       <HomeAbout />
-      <HomeTech />
       <HomeModular />
+      <HomeTech />
       <HomeFooter />
     </div>
   </div>
