@@ -9,8 +9,26 @@
     width: 100%;
   }
 
+  .title-container {
+    left: 50%;
+    position: absolute;
+    top: 85%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  .title {
+    color: #fff;
+    font-size: 5.143rem;
+    font-weight: 100;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 1.429rem;
+    padding-right: 1.429rem;
+  }
+
   .particles {
-    height: 400px;
+    height: 475px;
     padding: 0 5px 5px 5px;
     position: relative;
     width: 100%;
@@ -23,7 +41,7 @@
   }
 
   .content {
-    padding: 15px;
+    padding: 5px;
     width: 100%;
   }
 }

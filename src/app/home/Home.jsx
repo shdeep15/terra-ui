@@ -20,6 +20,9 @@ const Home = () => (
   <div className={cx(['home'])}>
     <div className={cx(['particles'])}>
       <Particles style={particleStyle} params={HomeParticleConfig} />
+      <div className={cx(['title-container'])}>
+        <h1 className={styles['title']}>{'Terra UI'}</h1>
+      </div>
     </div>
     <div className={cx(['content'])}>
       <HomeAbout />
