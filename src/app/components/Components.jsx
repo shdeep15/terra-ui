@@ -18,13 +18,9 @@ const generateRoutes = config => {
   return [].concat(...routes);
 };
 
-// const generateRedirect = (config) => {
-//   const firstExample = config.map(componentKey => (config[componentKey].example)).filter(example => !!example)[0];
-//   if (firstExample) {
-//     return <Redirect to={firstExample.path} />;
-//   }
-//   return null;
-// };
+const generateRedirect = (config) => {
+  return <Redirect to={config[0].components[0].path} />;
+};
 
 class Components extends React.Component {
   componentDidUpdate(prevProps) {
@@ -40,6 +36,7 @@ class Components extends React.Component {
       <div ref={(element) => { this.element = element; }} style={{ height: '100%', position: 'relative', overflow: 'auto' }}>
         <Switch>
           {generateRoutes(config)}
+          {generateRedirect(config)}
         </Switch>
       </div>
     );
