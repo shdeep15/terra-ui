@@ -51,6 +51,7 @@
     "terra-markdown": "^1.9.1",
     "terra-menu": "^1.6.0",
     "terra-navigation-layout": "^1.0.0",
+    "terra-overlay": "^1.14.0",
     "terra-props-table": "^1.10.1",
     "terra-slide-panel": "^1.11.1",
     "terra-text": "^1.14.0",

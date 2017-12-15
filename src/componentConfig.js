@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import EmbeddedContentConsumer from 'terra-embedded-content-consumer';
+import OverlayContainer from 'terra-overlay/lib/OverlayContainer';
+import LoadingOverlay from 'terra-overlay/lib/LoadingOverlay';
 import { Consumer } from 'xfc';
 
 import exampleConfig from '../site-example-config/config.json';
@@ -8,9 +10,36 @@ import exampleConfig from '../site-example-config/config.json';
 Consumer.init();
 
 const generateEmbeddedExample = (path) => (
-  () => (
-    <EmbeddedContentConsumer src={path} style={{ height: '100%' }} />
-  )
+  class EmbeddedContentWrapper extends React.Component {
+    constructor(props) {
+      super(props);
+
+      this.state = {
+        authorized: false,
+      }
+    }
+
+    render() {
+      return (
+        <OverlayContainer style={{ height: '100%', position: 'relative' }}>
+          <EmbeddedContentConsumer
+            src={path}
+            onAuthorize={() => {
+              this.setState({
+                authorized: true,
+              })
+            }}
+            style={{ height: '100%', width: '100%', position: 'absolute' }}
+          />
+          <LoadingOverlay
+            isRelativeToContainer
+            isOpen={!this.state.authorized}
+            isAnimated
+          />
+        </OverlayContainer>
+      )
+    }
+  }
 );
 
 const componentConfig = Object.values(exampleConfig).map((packageEntry) => (
