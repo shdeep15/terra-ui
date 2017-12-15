@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "lodash.kebabcase": "^4.1.1",
     "postcss": "^6.0.9",
     "prop-types": "^15.5.8",
     "react-intl": "^2.3.0",

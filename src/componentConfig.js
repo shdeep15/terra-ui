@@ -4,6 +4,7 @@ import EmbeddedContentConsumer from 'terra-embedded-content-consumer';
 import OverlayContainer from 'terra-overlay/lib/OverlayContainer';
 import LoadingOverlay from 'terra-overlay/lib/LoadingOverlay';
 import { Consumer } from 'xfc';
+import kebabCase from 'lodash.kebabcase';
 
 import exampleConfig from '../site-example-config/config.json';
 
@@ -48,7 +49,7 @@ const componentConfig = Object.values(exampleConfig).map((packageEntry) => (
     components: packageEntry.packages.map(exampleEntry => (
       {
         name: exampleEntry.name,
-        path: `/components/${packageEntry.name.replace(/\s/g, '')}/${exampleEntry.name.replace(/\s/g, '')}`,
+        path: `/components/${kebabCase(packageEntry.name)}/${kebabCase(exampleEntry.name)}`,
         component: generateEmbeddedExample(exampleEntry.url),
       }
     )),
